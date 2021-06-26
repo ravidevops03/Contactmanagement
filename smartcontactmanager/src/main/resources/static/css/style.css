@@ -99,3 +99,19 @@ body {
 	border-radius : 50%;
 	border:1px solid black;
 }
+
+/*css for search  */
+
+.search-result{
+	position:absolute;
+	background: white;
+	width: 97%;
+	padding:10px;
+	border:1px solid gray;
+	display: none;
+}
+
+.active{
+	background:#009688 !important;
+	color:white !important;
+}

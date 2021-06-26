@@ -10,6 +10,8 @@ import javax.persistence.Table;
 
 import org.hibernate.annotations.ManyToAny;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 
 @Entity
 @Table(name="CONTACT")
@@ -28,6 +30,7 @@ public class Contact {
 	private String description;
 	
 	@ManyToOne
+    @JsonBackReference
 	private User user;
 	
 	public int getcId() {
